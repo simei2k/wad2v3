@@ -32,9 +32,12 @@ import OpenAI from 'openai';
 const OpenAI_KEY = import.meta.env.VITE_OPENAI_KEY;
 
 const openai = new OpenAI({
-  apiKey: OpenAI_KEY, // Replace with your actual API key in .env.local
-  dangerouslyAllowBrowser: true,
+  apiKey: OpenAI_KEY,  
+  dangerouslyAllowBrowser: true, 
 });
+
+export default openai;
+
 
 export default {
   data() {
